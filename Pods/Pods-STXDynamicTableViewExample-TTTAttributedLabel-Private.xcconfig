@@ -1,0 +1,5 @@
+#include "Pods-STXDynamicTableViewExample-TTTAttributedLabel.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/TTTAttributedLabel" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/KZPropertyMapper" "${PODS_ROOT}/Headers/MHPrettyDate" "${PODS_ROOT}/Headers/MTJSONUtils" "${PODS_ROOT}/Headers/TTTAttributedLabel" "${PODS_ROOT}/Headers/UALogger" "${PODS_ROOT}/Headers/UIView+AutoLayout"
+OTHER_LDFLAGS = -ObjC ${PODS_STXDYNAMICTABLEVIEWEXAMPLE_TTTATTRIBUTEDLABEL_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

@@ -1,0 +1,68 @@
+//
+//  MHPrettyDate.strings
+//  MHPrettyDate
+//
+//  Created by Bart Vandendriessche on 15/03/13.
+//  Copyright (c) 2013 Bart Vandendriessche. All rights reserved.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+/* No comment provided by engineer. */
+"Now" = "Nu";
+
+/* No comment provided by engineer. */
+" days ago" = " dagen geleden";
+
+/* No comment provided by engineer. */
+" hour ago" = " uur geleden";
+
+/* No comment provided by engineer. */
+" hours ago" = " uren geleden";
+
+/* No comment provided by engineer. */
+" minute ago" = " minuut geleden";
+
+/* No comment provided by engineer. */
+" minutes ago" = " minuten geleden";
+
+/* This value is used in a DateFormat, the single quotes are important. */
+"'Today'" = "'Vandaag'";
+
+/* This value is used in a DateFormat, the single quotes are important. */
+"'Tomorrow'" = "'Morgen'";
+
+/* This value is used in a DateFormat, the single quotes are important. */
+"'Yesterday'" = "'Gisteren'";
+
+/* No comment provided by engineer. */
+"1 day ago" = "1 dag geleden";
+
+/* No comment provided by engineer. */
+"1d" = "1d";
+
+/* No comment provided by engineer. */
+"d" = "d";
+
+/* No comment provided by engineer. */
+"h" = "u";
+
+/* No comment provided by engineer. */
+"m" = "m";
+
+

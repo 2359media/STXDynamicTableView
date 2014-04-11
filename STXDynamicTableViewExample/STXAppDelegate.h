@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 2359 Media Pte Ltd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface STXAppDelegate : UIResponder <UIApplicationDelegate>
 

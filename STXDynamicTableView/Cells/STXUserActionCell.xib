@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="STXUserActionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-5B-KND">
+                        <rect key="frame" x="10" y="3" width="100" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cjQ-C2-OpO"/>
+                            <constraint firstAttribute="height" constant="36" id="fFa-Y0-Vrj"/>
+                        </constraints>
+                        <state key="normal" title="Love">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWo-cB-LDF" userLabel="Button Divider">
+                        <rect key="frame" x="109" y="8" width="1" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="5Ry-u4-r2a"/>
+                            <constraint firstAttribute="height" constant="27" id="wJf-kH-xA5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcU-Ci-npS">
+                        <rect key="frame" x="110" y="3" width="100" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="827-3d-mJO"/>
+                            <constraint firstAttribute="width" constant="100" id="uBK-LA-MOp"/>
+                        </constraints>
+                        <state key="normal" title="Comment">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enb-uG-skx">
+                        <rect key="frame" x="210" y="3" width="100" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="uKa-Xz-3H0"/>
+                            <constraint firstAttribute="height" constant="36" id="vI0-bt-UNV"/>
+                        </constraints>
+                        <state key="normal" title="Share">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWy-01-QxB" userLabel="Button Divider">
+                        <rect key="frame" x="210" y="8" width="1" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="bSV-vc-pLa"/>
+                            <constraint firstAttribute="width" constant="1" id="hjc-sV-nyx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S4R-5B-KND" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CGX-XI-TiU"/>
+                    <constraint firstItem="Enb-uG-skx" firstAttribute="leading" secondItem="xcU-Ci-npS" secondAttribute="trailing" id="DYN-He-xOQ"/>
+                    <constraint firstItem="xcU-Ci-npS" firstAttribute="top" secondItem="S4R-5B-KND" secondAttribute="top" id="IP7-3H-sfa"/>
+                    <constraint firstItem="vWy-01-QxB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="IiS-PJ-0pQ"/>
+                    <constraint firstAttribute="trailing" secondItem="vWy-01-QxB" secondAttribute="trailing" constant="109" id="dqM-YS-R8L"/>
+                    <constraint firstAttribute="bottom" secondItem="S4R-5B-KND" secondAttribute="bottom" constant="4" id="jvD-uY-Sex"/>
+                    <constraint firstItem="xcU-Ci-npS" firstAttribute="top" secondItem="Enb-uG-skx" secondAttribute="top" id="uWe-0U-RkB"/>
+                    <constraint firstItem="xcU-Ci-npS" firstAttribute="leading" secondItem="S4R-5B-KND" secondAttribute="trailing" id="wiT-i4-RhT"/>
+                    <constraint firstItem="IWo-cB-LDF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="109" id="yJV-Dw-Pw5"/>
+                    <constraint firstItem="IWo-cB-LDF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="zVm-45-A5p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonDividerLeft" destination="IWo-cB-LDF" id="coj-MF-sQx"/>
+                <outlet property="buttonDividerRight" destination="vWy-01-QxB" id="jdc-uC-G1G"/>
+                <outlet property="commentButton" destination="xcU-Ci-npS" id="kyI-re-sOU"/>
+                <outlet property="likeButton" destination="S4R-5B-KND" id="ZLa-qN-TbJ"/>
+                <outlet property="shareButton" destination="Enb-uG-skx" id="bga-fz-efg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

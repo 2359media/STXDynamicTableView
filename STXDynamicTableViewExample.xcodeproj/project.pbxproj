@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010BA83218EC11D40030AF40 /* STXFeedPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA82318EC11D40030AF40 /* STXFeedPhotoCell.m */; };
+		010BA83318EC11D40030AF40 /* STXFeedPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010BA82418EC11D40030AF40 /* STXFeedPhotoCell.xib */; };
+		010BA83618EC11D40030AF40 /* STXAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA82C18EC11D40030AF40 /* STXAttributedLabel.m */; };
+		010BA83718EC11D40030AF40 /* STXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA82E18EC11D40030AF40 /* STXLabel.m */; };
+		010BA83C18ED10800030AF40 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA83B18ED10800030AF40 /* NSString+Emoji.m */; };
+		010BA83D18ED10800030AF40 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA83B18ED10800030AF40 /* NSString+Emoji.m */; };
+		010BA84118ED3EBB0030AF40 /* STXFeedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA84018ED3EBB0030AF40 /* STXFeedTableViewDataSource.m */; };
+		010BA84418ED3ED30030AF40 /* STXFeedTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA84318ED3ED30030AF40 /* STXFeedTableViewDelegate.m */; };
+		010BA84718ED43AC0030AF40 /* STXFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA84618ED43AC0030AF40 /* STXFeedViewController.m */; };
+		010BA85A18ED5D680030AF40 /* UIViewController+Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA85918ED5D680030AF40 /* UIViewController+Indicator.m */; };
+		017D674A18F6771800DD096A /* STXLikesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017D674818F6771800DD096A /* STXLikesCell.m */; };
+		017D674F18F6773100DD096A /* STXCaptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017D674D18F6773100DD096A /* STXCaptionCell.m */; };
 		0196482518EAB434001185C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196482418EAB434001185C3 /* Foundation.framework */; };
 		0196482718EAB434001185C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196482618EAB434001185C3 /* CoreGraphics.framework */; };
 		0196482918EAB434001185C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196482818EAB434001185C3 /* UIKit.framework */; };
@@ -19,6 +31,20 @@
 		0196484018EAB434001185C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196482818EAB434001185C3 /* UIKit.framework */; };
 		0196484818EAB434001185C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0196484618EAB434001185C3 /* InfoPlist.strings */; };
 		0196484A18EAB434001185C3 /* STXDynamicTableViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0196484918EAB434001185C3 /* STXDynamicTableViewExampleTests.m */; };
+		0196485518EAB48F001185C3 /* instagram_media_popular.json in Resources */ = {isa = PBXBuildFile; fileRef = 0196485418EAB48F001185C3 /* instagram_media_popular.json */; };
+		01C4B21B18F7A92100712436 /* STXComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4B21A18F7A92100712436 /* STXComment.m */; };
+		01E383A618F537150094BCC1 /* UIViewController+Sharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383A518F537150094BCC1 /* UIViewController+Sharing.m */; };
+		01E383AA18F539B00094BCC1 /* STXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383A918F539B00094BCC1 /* STXButton.m */; };
+		01E383AD18F53DDA0094BCC1 /* UIImageView+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383AC18F53DDA0094BCC1 /* UIImageView+Masking.m */; };
+		01E383B018F5491D0094BCC1 /* UIButton+STXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383AF18F5491D0094BCC1 /* UIButton+STXButton.m */; };
+		01E383B318F54B890094BCC1 /* UIImage+STXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383B218F54B890094BCC1 /* UIImage+STXImage.m */; };
+		01E383B518F551480094BCC1 /* STXFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E383B418F551480094BCC1 /* STXFeedViewController.xib */; };
+		01E383B918F55D390094BCC1 /* STXPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383B818F55D390094BCC1 /* STXPost.m */; };
+		01E383BC18F596050094BCC1 /* STXUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383BB18F596050094BCC1 /* STXUser.m */; };
+		01E383C018F638030094BCC1 /* STXCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383BE18F638030094BCC1 /* STXCommentCell.m */; };
+		01E383C518F65C6D0094BCC1 /* STXUserActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383C318F65C6D0094BCC1 /* STXUserActionCell.m */; };
+		01E383C618F65C6D0094BCC1 /* STXUserActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E383C418F65C6D0094BCC1 /* STXUserActionCell.xib */; };
+		1A1DFC0356454E938E07048F /* libPods-STXDynamicTableViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +58,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010BA82218EC11D40030AF40 /* STXFeedPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXFeedPhotoCell.h; sourceTree = "<group>"; };
+		010BA82318EC11D40030AF40 /* STXFeedPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXFeedPhotoCell.m; sourceTree = "<group>"; };
+		010BA82418EC11D40030AF40 /* STXFeedPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STXFeedPhotoCell.xib; sourceTree = "<group>"; };
+		010BA82B18EC11D40030AF40 /* STXAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXAttributedLabel.h; sourceTree = "<group>"; };
+		010BA82C18EC11D40030AF40 /* STXAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXAttributedLabel.m; sourceTree = "<group>"; };
+		010BA82D18EC11D40030AF40 /* STXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXLabel.h; sourceTree = "<group>"; };
+		010BA82E18EC11D40030AF40 /* STXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXLabel.m; sourceTree = "<group>"; };
+		010BA83A18ED10800030AF40 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		010BA83B18ED10800030AF40 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		010BA83F18ED3EBB0030AF40 /* STXFeedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXFeedTableViewDataSource.h; sourceTree = "<group>"; };
+		010BA84018ED3EBB0030AF40 /* STXFeedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXFeedTableViewDataSource.m; sourceTree = "<group>"; };
+		010BA84218ED3ED30030AF40 /* STXFeedTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXFeedTableViewDelegate.h; sourceTree = "<group>"; };
+		010BA84318ED3ED30030AF40 /* STXFeedTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXFeedTableViewDelegate.m; sourceTree = "<group>"; };
+		010BA84518ED43AC0030AF40 /* STXFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXFeedViewController.h; sourceTree = "<group>"; };
+		010BA84618ED43AC0030AF40 /* STXFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXFeedViewController.m; sourceTree = "<group>"; };
+		010BA84B18ED4B610030AF40 /* STXPostItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXPostItem.h; sourceTree = "<group>"; };
+		010BA84F18ED4BD80030AF40 /* STXCommentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXCommentItem.h; sourceTree = "<group>"; };
+		010BA85318ED4C150030AF40 /* STXUserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXUserItem.h; sourceTree = "<group>"; };
+		010BA85718ED4F420030AF40 /* STXDynamicTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXDynamicTableView.h; sourceTree = "<group>"; };
+		010BA85818ED5D680030AF40 /* UIViewController+Indicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Indicator.h"; sourceTree = "<group>"; };
+		010BA85918ED5D680030AF40 /* UIViewController+Indicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Indicator.m"; sourceTree = "<group>"; };
+		017D674718F6771800DD096A /* STXLikesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXLikesCell.h; sourceTree = "<group>"; };
+		017D674818F6771800DD096A /* STXLikesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXLikesCell.m; sourceTree = "<group>"; };
+		017D674C18F6773100DD096A /* STXCaptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXCaptionCell.h; sourceTree = "<group>"; };
+		017D674D18F6773100DD096A /* STXCaptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXCaptionCell.m; sourceTree = "<group>"; };
 		0196482118EAB434001185C3 /* STXDynamicTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STXDynamicTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0196482418EAB434001185C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0196482618EAB434001185C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +99,31 @@
 		0196484518EAB434001185C3 /* STXDynamicTableViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STXDynamicTableViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0196484718EAB434001185C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0196484918EAB434001185C3 /* STXDynamicTableViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STXDynamicTableViewExampleTests.m; sourceTree = "<group>"; };
+		0196485418EAB48F001185C3 /* instagram_media_popular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = instagram_media_popular.json; sourceTree = "<group>"; };
+		01C4B21918F7A92100712436 /* STXComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXComment.h; sourceTree = "<group>"; };
+		01C4B21A18F7A92100712436 /* STXComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXComment.m; sourceTree = "<group>"; };
+		01E383A418F537150094BCC1 /* UIViewController+Sharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sharing.h"; sourceTree = "<group>"; };
+		01E383A518F537150094BCC1 /* UIViewController+Sharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sharing.m"; sourceTree = "<group>"; };
+		01E383A818F539B00094BCC1 /* STXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXButton.h; sourceTree = "<group>"; };
+		01E383A918F539B00094BCC1 /* STXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXButton.m; sourceTree = "<group>"; };
+		01E383AB18F53DDA0094BCC1 /* UIImageView+Masking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Masking.h"; sourceTree = "<group>"; };
+		01E383AC18F53DDA0094BCC1 /* UIImageView+Masking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Masking.m"; sourceTree = "<group>"; };
+		01E383AE18F5491D0094BCC1 /* UIButton+STXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+STXButton.h"; sourceTree = "<group>"; };
+		01E383AF18F5491D0094BCC1 /* UIButton+STXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+STXButton.m"; sourceTree = "<group>"; };
+		01E383B118F54B890094BCC1 /* UIImage+STXImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+STXImage.h"; sourceTree = "<group>"; };
+		01E383B218F54B890094BCC1 /* UIImage+STXImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+STXImage.m"; sourceTree = "<group>"; };
+		01E383B418F551480094BCC1 /* STXFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STXFeedViewController.xib; sourceTree = "<group>"; };
+		01E383B718F55D390094BCC1 /* STXPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXPost.h; sourceTree = "<group>"; };
+		01E383B818F55D390094BCC1 /* STXPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXPost.m; sourceTree = "<group>"; };
+		01E383BA18F596050094BCC1 /* STXUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXUser.h; sourceTree = "<group>"; };
+		01E383BB18F596050094BCC1 /* STXUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXUser.m; sourceTree = "<group>"; };
+		01E383BD18F638030094BCC1 /* STXCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXCommentCell.h; sourceTree = "<group>"; };
+		01E383BE18F638030094BCC1 /* STXCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXCommentCell.m; sourceTree = "<group>"; };
+		01E383C218F65C6D0094BCC1 /* STXUserActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXUserActionCell.h; sourceTree = "<group>"; };
+		01E383C318F65C6D0094BCC1 /* STXUserActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXUserActionCell.m; sourceTree = "<group>"; };
+		01E383C418F65C6D0094BCC1 /* STXUserActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STXUserActionCell.xib; sourceTree = "<group>"; };
+		B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXDynamicTableViewExample.xcconfig"; path = "Pods/Pods-STXDynamicTableViewExample.xcconfig"; sourceTree = "<group>"; };
+		EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STXDynamicTableViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +134,7 @@
 				0196482718EAB434001185C3 /* CoreGraphics.framework in Frameworks */,
 				0196482918EAB434001185C3 /* UIKit.framework in Frameworks */,
 				0196482518EAB434001185C3 /* Foundation.framework in Frameworks */,
+				1A1DFC0356454E938E07048F /* libPods-STXDynamicTableViewExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +151,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010BA7FC18EC07C90030AF40 /* STXDynamicTableView */ = {
+			isa = PBXGroup;
+			children = (
+				010BA83E18ED3E900030AF40 /* Managers */,
+				010BA83918ED10640030AF40 /* Categories */,
+				010BA81E18EC11D40030AF40 /* Cells */,
+				010BA83818EC13530030AF40 /* Items */,
+				01E383A718F539B00094BCC1 /* Buttons */,
+				010BA82A18EC11D40030AF40 /* Labels */,
+				010BA85718ED4F420030AF40 /* STXDynamicTableView.h */,
+			);
+			path = STXDynamicTableView;
+			sourceTree = "<group>";
+		};
+		010BA81E18EC11D40030AF40 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				010BA82218EC11D40030AF40 /* STXFeedPhotoCell.h */,
+				010BA82318EC11D40030AF40 /* STXFeedPhotoCell.m */,
+				010BA82418EC11D40030AF40 /* STXFeedPhotoCell.xib */,
+				017D674718F6771800DD096A /* STXLikesCell.h */,
+				017D674818F6771800DD096A /* STXLikesCell.m */,
+				017D674C18F6773100DD096A /* STXCaptionCell.h */,
+				017D674D18F6773100DD096A /* STXCaptionCell.m */,
+				01E383BD18F638030094BCC1 /* STXCommentCell.h */,
+				01E383BE18F638030094BCC1 /* STXCommentCell.m */,
+				01E383C218F65C6D0094BCC1 /* STXUserActionCell.h */,
+				01E383C318F65C6D0094BCC1 /* STXUserActionCell.m */,
+				01E383C418F65C6D0094BCC1 /* STXUserActionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		010BA82A18EC11D40030AF40 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				010BA82B18EC11D40030AF40 /* STXAttributedLabel.h */,
+				010BA82C18EC11D40030AF40 /* STXAttributedLabel.m */,
+				010BA82D18EC11D40030AF40 /* STXLabel.h */,
+				010BA82E18EC11D40030AF40 /* STXLabel.m */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		010BA83818EC13530030AF40 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				010BA84B18ED4B610030AF40 /* STXPostItem.h */,
+				010BA84F18ED4BD80030AF40 /* STXCommentItem.h */,
+				010BA85318ED4C150030AF40 /* STXUserItem.h */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		010BA83918ED10640030AF40 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				01E383AE18F5491D0094BCC1 /* UIButton+STXButton.h */,
+				01E383AF18F5491D0094BCC1 /* UIButton+STXButton.m */,
+				01E383B118F54B890094BCC1 /* UIImage+STXImage.h */,
+				01E383B218F54B890094BCC1 /* UIImage+STXImage.m */,
+				01E383AB18F53DDA0094BCC1 /* UIImageView+Masking.h */,
+				01E383AC18F53DDA0094BCC1 /* UIImageView+Masking.m */,
+				01E383A418F537150094BCC1 /* UIViewController+Sharing.h */,
+				01E383A518F537150094BCC1 /* UIViewController+Sharing.m */,
+				010BA85818ED5D680030AF40 /* UIViewController+Indicator.h */,
+				010BA85918ED5D680030AF40 /* UIViewController+Indicator.m */,
+				010BA83A18ED10800030AF40 /* NSString+Emoji.h */,
+				010BA83B18ED10800030AF40 /* NSString+Emoji.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		010BA83E18ED3E900030AF40 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				010BA84218ED3ED30030AF40 /* STXFeedTableViewDelegate.h */,
+				010BA84318ED3ED30030AF40 /* STXFeedTableViewDelegate.m */,
+				010BA83F18ED3EBB0030AF40 /* STXFeedTableViewDataSource.h */,
+				010BA84018ED3EBB0030AF40 /* STXFeedTableViewDataSource.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		0196481818EAB434001185C3 = {
 			isa = PBXGroup;
 			children = (
+				010BA7FC18EC07C90030AF40 /* STXDynamicTableView */,
 				0196482A18EAB434001185C3 /* STXDynamicTableViewExample */,
 				0196484318EAB434001185C3 /* STXDynamicTableViewExampleTests */,
 				0196482318EAB434001185C3 /* Frameworks */,
 				0196482218EAB434001185C3 /* Products */,
+				B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +263,7 @@
 				0196482618EAB434001185C3 /* CoreGraphics.framework */,
 				0196482818EAB434001185C3 /* UIKit.framework */,
 				0196483D18EAB434001185C3 /* XCTest.framework */,
+				EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,9 +271,14 @@
 		0196482A18EAB434001185C3 /* STXDynamicTableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				01E383B618F55D090094BCC1 /* Models */,
+				010BA84518ED43AC0030AF40 /* STXFeedViewController.h */,
+				010BA84618ED43AC0030AF40 /* STXFeedViewController.m */,
+				01E383B418F551480094BCC1 /* STXFeedViewController.xib */,
 				0196483318EAB434001185C3 /* STXAppDelegate.h */,
 				0196483418EAB434001185C3 /* STXAppDelegate.m */,
 				0196483618EAB434001185C3 /* Images.xcassets */,
+				0196485318EAB48F001185C3 /* Resources */,
 				0196482B18EAB434001185C3 /* Supporting Files */,
 			);
 			path = STXDynamicTableViewExample;
@@ -144,6 +313,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0196485318EAB48F001185C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0196485418EAB48F001185C3 /* instagram_media_popular.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01E383A718F539B00094BCC1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				01E383A818F539B00094BCC1 /* STXButton.h */,
+				01E383A918F539B00094BCC1 /* STXButton.m */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		01E383B618F55D090094BCC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01C4B21918F7A92100712436 /* STXComment.h */,
+				01C4B21A18F7A92100712436 /* STXComment.m */,
+				01E383B718F55D390094BCC1 /* STXPost.h */,
+				01E383B818F55D390094BCC1 /* STXPost.m */,
+				01E383BA18F596050094BCC1 /* STXUser.h */,
+				01E383BB18F596050094BCC1 /* STXUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0196484D18EAB434001185C3 /* Build configuration list for PBXNativeTarget "STXDynamicTableViewExample" */;
 			buildPhases = (
+				1DE0784B99E84F7AA6A1219D /* Check Pods Manifest.lock */,
 				0196481D18EAB434001185C3 /* Sources */,
 				0196481E18EAB434001185C3 /* Frameworks */,
 				0196481F18EAB434001185C3 /* Resources */,
+				46FB61A0D3734DDC91CA4CEC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,8 +421,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E383C618F65C6D0094BCC1 /* STXUserActionCell.xib in Resources */,
 				0196482F18EAB434001185C3 /* InfoPlist.strings in Resources */,
+				0196485518EAB48F001185C3 /* instagram_media_popular.json in Resources */,
 				0196483718EAB434001185C3 /* Images.xcassets in Resources */,
+				010BA83318EC11D40030AF40 /* STXFeedPhotoCell.xib in Resources */,
+				01E383B518F551480094BCC1 /* STXFeedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,13 +440,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DE0784B99E84F7AA6A1219D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46FB61A0D3734DDC91CA4CEC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-STXDynamicTableViewExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0196481D18EAB434001185C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E383BC18F596050094BCC1 /* STXUser.m in Sources */,
+				010BA83C18ED10800030AF40 /* NSString+Emoji.m in Sources */,
+				01E383AA18F539B00094BCC1 /* STXButton.m in Sources */,
 				0196483518EAB434001185C3 /* STXAppDelegate.m in Sources */,
+				01E383C018F638030094BCC1 /* STXCommentCell.m in Sources */,
+				01E383B318F54B890094BCC1 /* UIImage+STXImage.m in Sources */,
+				01E383C518F65C6D0094BCC1 /* STXUserActionCell.m in Sources */,
+				010BA83718EC11D40030AF40 /* STXLabel.m in Sources */,
 				0196483118EAB434001185C3 /* main.m in Sources */,
+				01C4B21B18F7A92100712436 /* STXComment.m in Sources */,
+				010BA83218EC11D40030AF40 /* STXFeedPhotoCell.m in Sources */,
+				010BA84118ED3EBB0030AF40 /* STXFeedTableViewDataSource.m in Sources */,
+				01E383AD18F53DDA0094BCC1 /* UIImageView+Masking.m in Sources */,
+				01E383A618F537150094BCC1 /* UIViewController+Sharing.m in Sources */,
+				01E383B918F55D390094BCC1 /* STXPost.m in Sources */,
+				017D674F18F6773100DD096A /* STXCaptionCell.m in Sources */,
+				010BA83618EC11D40030AF40 /* STXAttributedLabel.m in Sources */,
+				010BA84718ED43AC0030AF40 /* STXFeedViewController.m in Sources */,
+				010BA84418ED3ED30030AF40 /* STXFeedTableViewDelegate.m in Sources */,
+				010BA85A18ED5D680030AF40 /* UIViewController+Indicator.m in Sources */,
+				017D674A18F6771800DD096A /* STXLikesCell.m in Sources */,
+				01E383B018F5491D0094BCC1 /* UIButton+STXButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010BA83D18ED10800030AF40 /* NSString+Emoji.m in Sources */,
 				0196484A18EAB434001185C3 /* STXDynamicTableViewExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -357,12 +616,14 @@
 		};
 		0196484E18EAB434001185C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,12 +631,14 @@
 		};
 		0196484F18EAB434001185C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,6 +703,7 @@
 				0196484F18EAB434001185C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0196485018EAB434001185C3 /* Build configuration list for PBXNativeTarget "STXDynamicTableViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +712,7 @@
 				0196485218EAB434001185C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

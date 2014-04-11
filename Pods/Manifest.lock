@@ -1,0 +1,46 @@
+PODS:
+  - AFNetworking (2.2.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.1):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.1)
+  - AFNetworking/Security (2.2.1)
+  - AFNetworking/Serialization (2.2.1)
+  - AFNetworking/UIKit (2.2.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - KZPropertyMapper (2.0.2)
+  - MHPrettyDate (1.1.1)
+  - MTJSONUtils (0.1.1)
+  - TTTAttributedLabel (1.9.3)
+  - UALogger (0.3)
+  - UIView+AutoLayout (1.3.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - KZPropertyMapper
+  - MHPrettyDate
+  - MTJSONUtils
+  - TTTAttributedLabel
+  - UALogger
+  - UIView+AutoLayout
+
+SPEC CHECKSUMS:
+  AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  KZPropertyMapper: 5b19fd654f65467d56cc2707ba5aa6faf2b60fb0
+  MHPrettyDate: 0486e5e1ddff296748b7a71cd78c9cc785a80cc5
+  MTJSONUtils: d054037cb843c48cf03bc6a905ae9dafba3bbbfe
+  TTTAttributedLabel: e65b9dd6aadb409ca07cb16034e94537e4ddab36
+  UALogger: c364904b0ed718ac60ae04912bc604302f87f11f
+  UIView+AutoLayout: 43373a18797954fd8ee3b1423af364f1b80a2af8
+
+COCOAPODS: 0.31.1

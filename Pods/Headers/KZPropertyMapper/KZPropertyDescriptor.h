@@ -1,0 +1,1 @@
+../../KZPropertyMapper/KZPropertyMapper/KZPropertyDescriptor.h

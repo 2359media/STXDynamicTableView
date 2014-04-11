@@ -6,11 +6,22 @@
 
 #import <Availability.h>
 
-#ifndef __IPHONE_3_0
-#warning "This project uses features only available in iOS SDK 3.0 and later."
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
+    @import UIKit;
+    @import Foundation;
+
+    #import <UALogger/UALogger.h>
+    #import <MTJSONUtils/NSObject+MTJSONUtils.h>
+    #import <UIView+AutoLayout/UIView+AutoLayout.h>
+    #import <TTTAttributedLabel/TTTAttributedLabel.h>
+    #import <MHPrettyDate/MHPrettyDate.h>
+    #import <AFNetworking/AFNetworking.h>
+    #import <AFNetworking/UIImageView+AFNetworking.h>
+    #import <KZPropertyMapper/KZPropertyMapper.h>
+
+    #import "STXDynamicTableView.h"
 #endif
