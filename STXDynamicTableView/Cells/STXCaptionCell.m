@@ -94,7 +94,7 @@ static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
     NSString *trimmedText = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     NSMutableArray *textCheckingResults = [NSMutableArray array];
-    [self.captionLabel setText:trimmedText afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+    [captionLabel setText:trimmedText afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         NSError *error;
         NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:HashTagAndMentionRegex
                                                                                options:NSRegularExpressionCaseInsensitive
@@ -111,7 +111,7 @@ static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
     }];
     
     for (NSTextCheckingResult *result in textCheckingResults) {
-        [self.captionLabel addLinkWithTextCheckingResult:result];
+        [captionLabel addLinkWithTextCheckingResult:result];
     }
 }
 
