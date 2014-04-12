@@ -12,6 +12,8 @@
 static CGFloat STXCommentViewLeadingEdgeInset = 10.f;
 static CGFloat STXCommentViewTrailingEdgeInset = 10.f;
 
+static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
+
 @interface STXCommentCell () <TTTAttributedLabelDelegate>
 
 @property (nonatomic) STXCommentCellStyle cellStyle;
@@ -120,18 +122,32 @@ static CGFloat STXCommentViewTrailingEdgeInset = 10.f;
 
 - (void)setCommentLabel:(STXAttributedLabel *)commentLabel text:(NSString *)text commenter:(NSString *)commenter
 {
-    __block NSTextCheckingResult *textCheckingResult;
-    
+    NSMutableArray *textCheckingResults = [NSMutableArray array];
     [commentLabel setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         NSRange searchRange = NSMakeRange(0, [mutableAttributedString length]);
         
         NSRange currentRange = [[mutableAttributedString string] rangeOfString:commenter options:NSLiteralSearch range:searchRange];
-        textCheckingResult = [NSTextCheckingResult linkCheckingResultWithRange:currentRange URL:nil];
+        NSTextCheckingResult *textCheckingResult = [NSTextCheckingResult linkCheckingResultWithRange:currentRange URL:nil];
+        [textCheckingResults addObject:textCheckingResult];
+        
+        NSError *error;
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:HashTagAndMentionRegex
+                                                                               options:NSRegularExpressionCaseInsensitive
+                                                                                 error:&error];
+        if (error) {
+            UALog(@"%@", error);
+        }
+        
+        [regex enumerateMatchesInString:[mutableAttributedString string] options:0 range:NSMakeRange(0, [mutableAttributedString length]) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+            [textCheckingResults addObject:result];
+        }];
         
         return mutableAttributedString;
     }];
-    
-    [commentLabel addLinkWithTextCheckingResult:textCheckingResult];
+   
+    for (NSTextCheckingResult *result in textCheckingResults) {
+        [commentLabel addLinkWithTextCheckingResult:result];
+    }
 }
 
 - (STXAttributedLabel *)allCommentsLabelWithTitle:(NSString *)title
@@ -163,7 +179,7 @@ static CGFloat STXCommentViewTrailingEdgeInset = 10.f;
     commentLabel.numberOfLines = 0;
     commentLabel.lineBreakMode = NSLineBreakByWordWrapping;
     
-    commentLabel.linkAttributes = @{ (NSString *)kCTForegroundColorAttributeName: [UIColor grayColor] };
+    commentLabel.linkAttributes = @{ (NSString *)kCTForegroundColorAttributeName: [UIColor blueColor] };
     commentLabel.activeLinkAttributes = commentLabel.linkAttributes;
     commentLabel.inactiveLinkAttributes = commentLabel.linkAttributes;
     
@@ -183,6 +199,8 @@ static CGFloat STXCommentViewTrailingEdgeInset = 10.f;
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithTextCheckingResult:(NSTextCheckingResult *)result
 {
     NSString *selectedText = [[label.attributedText string] substringWithRange:result.range];
+    UALog(@"%@", selectedText);
+    
     if ([selectedText hasPrefix:@"http://"] || [selectedText hasPrefix:@"https://"]) {
         NSURL *selectedURL = [NSURL URLWithString:selectedText];
         
@@ -191,6 +209,18 @@ static CGFloat STXCommentViewTrailingEdgeInset = 10.f;
                 [self.delegate commentCell:self didSelectURL:selectedURL];
             }
             return;
+        }
+    } else if ([selectedText hasPrefix:@"#"]) {
+        NSString *hashtag = [selectedText substringFromIndex:1];
+        
+        if ([self.delegate respondsToSelector:@selector(commentCell:didSelectHashtag:)]) {
+            [self.delegate commentCell:self didSelectHashtag:hashtag];
+        }
+    } else if ([selectedText hasPrefix:@"@"]) {
+        NSString *mention = [selectedText substringFromIndex:1];
+        
+        if ([self.delegate respondsToSelector:@selector(commentCell:didSelectMention:)]) {
+            [self.delegate commentCell:self didSelectMention:mention];
         }
     }
     

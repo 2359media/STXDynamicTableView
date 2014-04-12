@@ -22,6 +22,8 @@ typedef NS_ENUM(int16_t, STXCommentCellStyle) {
 - (void)commentCellWillShowAllComments:(STXCommentCell *)commentCell;
 - (void)commentCell:(STXCommentCell *)commentCell willShowCommenter:(id<STXUserItem>)commenter;
 - (void)commentCell:(STXCommentCell *)commentCell didSelectURL:(NSURL *)url;
+- (void)commentCell:(STXCommentCell *)commentCell didSelectHashtag:(NSString *)hashtag;
+- (void)commentCell:(STXCommentCell *)commentCell didSelectMention:(NSString *)mention;
 
 @end
 
