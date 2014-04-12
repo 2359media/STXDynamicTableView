@@ -12,7 +12,7 @@
 static CGFloat STXCaptionViewLeadingEdgeInset = 10.f;
 static CGFloat STXCaptionViewTrailingEdgeInset = 10.f;
 
-static NSString *HashTagRegex = @"#(\\w+)";
+static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
 
 @interface STXCaptionCell () <TTTAttributedLabelDelegate>
 
@@ -96,7 +96,7 @@ static NSString *HashTagRegex = @"#(\\w+)";
     NSMutableArray *textCheckingResults = [NSMutableArray array];
     [self.captionLabel setText:trimmedText afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         NSError *error;
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:HashTagRegex
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:HashTagAndMentionRegex
                                                                                options:NSRegularExpressionCaseInsensitive
                                                                                  error:&error];
         if (error) {
@@ -136,15 +136,22 @@ static NSString *HashTagRegex = @"#(\\w+)";
 
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithTextCheckingResult:(NSTextCheckingResult *)result
 {
-    NSString *hashtag = [[label.attributedText string] substringWithRange:result.range];
-    UALog(@"%@", hashtag);
+    NSString *hashtagOrMention = [[label.attributedText string] substringWithRange:result.range];
+    UALog(@"%@", hashtagOrMention);
     
-    if ([hashtag hasPrefix:@"#"]) {
-        hashtag = [hashtag substringFromIndex:1];
+    if ([hashtagOrMention hasPrefix:@"#"]) {
+        NSString *hashtag = [hashtagOrMention substringFromIndex:1];
+        
+        if ([self.delegate respondsToSelector:@selector(captionCell:didSelectHashtag:)]) {
+            [self.delegate captionCell:self didSelectHashtag:hashtag];
+        }
+    } else if ([hashtagOrMention hasPrefix:@"@"]) {
+        NSString *mention = [hashtagOrMention substringFromIndex:1];
+        
+        if ([self.delegate respondsToSelector:@selector(captionCell:didSelectMention:)]) {
+            [self.delegate captionCell:self didSelectMention:mention];
+        }
     }
-    
-    if ([self.delegate respondsToSelector:@selector(captionCell:didSelectHashtag:)])
-        [self.delegate captionCell:self didSelectHashtag:hashtag];
 }
 
 @end

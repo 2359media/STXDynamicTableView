@@ -15,6 +15,7 @@
 @optional
 
 - (void)captionCell:(STXCaptionCell *)captionCell didSelectHashtag:(NSString *)hashtag;
+- (void)captionCell:(STXCaptionCell *)captionCell didSelectMention:(NSString *)mention;
 - (void)captionCell:(STXCaptionCell *)captionCell didSelectPoster:(id<STXUserItem>)userItem;
 
 @end
