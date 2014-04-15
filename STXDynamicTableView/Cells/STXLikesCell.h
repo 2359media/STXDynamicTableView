@@ -8,6 +8,11 @@
 
 @import UIKit;
 
+typedef NS_ENUM(NSUInteger, STXLikesCellStyle) {
+    STXLikesCellStyleLikesCount,
+    STXLikesCellStyleLikers
+};
+
 @class STXLikesCell;
 
 @protocol STXLikesCellDelegate <NSObject>
@@ -25,6 +30,6 @@
 
 @property (weak, nonatomic) id <STXLikesCellDelegate> delegate;
 
-- (instancetype)initWithLikes:(NSDictionary *)likes reuseIdentifier:(NSString *)reuseIdentifier;
+- (instancetype)initWithStyle:(STXLikesCellStyle)style likes:(NSDictionary *)likes reuseIdentifier:(NSString *)reuseIdentifier;
 
 @end

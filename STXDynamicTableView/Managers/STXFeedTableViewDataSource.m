@@ -84,11 +84,21 @@
 - (STXLikesCell *)likesCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath
 {
     id<STXPostItem> post = self.posts[indexPath.section];
+    STXLikesCell *cell;
     
-    NSString *CellIdentifier = NSStringFromClass([STXLikesCell class]);
-    STXLikesCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[STXLikesCell alloc] initWithLikes:[post likes] reuseIdentifier:CellIdentifier];
+        NSDictionary *likes = [post likes];
+        NSInteger count = [[likes valueForComplexKeyPath:@"count"] integerValue];
+        if (count > 2) {
+            static NSString *CellIdentifier = @"STXLikesCountCell";
+            cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            cell = [[STXLikesCell alloc] initWithStyle:STXLikesCellStyleLikesCount likes:likes reuseIdentifier:CellIdentifier];
+        } else {
+            static NSString *CellIdentifier = @"STXLikersCell";
+            cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            cell = [[STXLikesCell alloc] initWithStyle:STXLikesCellStyleLikers likes:likes reuseIdentifier:CellIdentifier];
+        }
+
         cell.delegate = self.controller;
     }
     
@@ -116,21 +126,25 @@
 - (STXCommentCell *)commentCellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath
 {
     id<STXPostItem> post = self.posts[indexPath.section];
-    
-    NSString *CellIdentifier = NSStringFromClass([STXCommentCell class]);
-    STXCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    STXCommentCell *cell;
     
     if (indexPath.row == 0 && [post totalComments] > MAX_NUMBER_OF_COMMENTS) {
+
+        static NSString *AllCommentsCellIdentifier = @"STXAllCommentsCell";
+        cell = [tableView dequeueReusableCellWithIdentifier:AllCommentsCellIdentifier];
     
         if (cell == nil) {
             cell = [[STXCommentCell alloc] initWithStyle:STXCommentCellStyleShowAllComments
                                            totalComments:[post totalComments]
-                                         reuseIdentifier:CellIdentifier];
+                                         reuseIdentifier:AllCommentsCellIdentifier];
         } else {
             cell.totalComments = [post totalComments];
         }
         
     } else {
+        static NSString *CellIdentifier = @"STXSingleCommentCell";
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
         NSArray *comments = [post comments];
         id<STXCommentItem> comment = comments[indexPath.row];
         

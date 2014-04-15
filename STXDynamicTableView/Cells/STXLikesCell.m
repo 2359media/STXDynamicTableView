@@ -15,18 +15,21 @@ static CGFloat STXLikesViewTrailingEdgeInset = 10.f;
 
 @property (nonatomic) BOOL didSetupConstraints;
 
+@property (nonatomic) STXLikesCellStyle cellStyle;
 @property (strong, nonatomic) TTTAttributedLabel *likesLabel;
 
 @end
 
 @implementation STXLikesCell
 
-- (instancetype)initWithLikes:(NSDictionary *)likes reuseIdentifier:(NSString *)reuseIdentifier
+- (instancetype)initWithStyle:(STXLikesCellStyle)style likes:(NSDictionary *)likes reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSInteger count = [[likes valueForComplexKeyPath:@"count"] integerValue];
-        if (count > 2) {
+        _cellStyle = style;
+        
+        if (style == STXLikesCellStyleLikesCount) {
+            NSInteger count = [[likes valueForComplexKeyPath:@"count"] integerValue];
             _likesLabel = [self likesLabelForCount:count];
         } else {
             NSArray *likers = [[likes valueForComplexKeyPath:@"data"] objectWithJSONSafeObjects];
