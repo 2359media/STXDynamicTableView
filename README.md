@@ -1,8 +1,11 @@
 STXDynamicTableView
 ===================
 
-Rebuilding of Instagram's dynamic table view
+A sample code for: 
 
-I will publish a short article regarding the challenges, difficulties, and how do we solve the
-issue of rebuilding the table view style popularized by Instagram app with auto-layout. 
+[Rebuilding of Instagram feed table
+view](http://engineering.2359media.net/blog/2014/04/16/rebuilding-instagram-feed-table-view/)
+
+Read the article to understand the challenges, difficulties, and how do we solve the
+issue of rebuilding the table view style popularized by Instagram app with Auto Layout. 
 
