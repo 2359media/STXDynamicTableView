@@ -67,6 +67,17 @@ ___
 ##Feedback
 We'd love to hear feedback. Create Github issues, pull requests, or hit us up on [Twitter](http://twitter.com/2359eng).
 
+---
+##Credits
+This project uses the following 3rd party libraries: 
+
+* Tyler Fox for [UIView-AutoLayout](https://github.com/smileyborg/UIView-AutoLayout)
+* Mattt Thompson for [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [TTTAttributedLabel](https://github.com/mattt/TTTAttributedLabel)
+* Krzysztof Zabłocki for [KZPropertyMapper](https://github.com/krzysztofzablocki/KZPropertyMapper)
+* Mysterious Trousers for [MTJSONUtils](https://github.com/mysterioustrousers/MTJSONUtils)
+* Bobby Williams for [MHPrettyDate](https://github.com/bobjustbob/MHPrettyDate)
+* Urban Apps for [UALogger](https://github.com/UrbanApps/UALogger)
+
 ___
 ##License
 `STXDynamicTableView` is available under the MIT license. See the LICENSE file for more info.
