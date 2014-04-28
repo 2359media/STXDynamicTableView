@@ -5,13 +5,10 @@
 <div align="center">
 <tr>
     <td>
-        <img src="http://engineering.2359media.net/media/2014-04-16-rebuilding-instagram-feed-table-view/images/feed1.png" width="240" height="451" />
+        <img src="http://engineering.2359media.net/media/2014-04-16-rebuilding-instagram-feed-table-view/images/feed1.png" width="266" height="500" />
     </td>
     <td>
-        <img src="http://engineering.2359media.net/media/2014-04-16-rebuilding-instagram-feed-table-view/images/feed2.png" width="240" height="451" />
-    </td>
-    <td>
-        <img src="http://engineering.2359media.net/media/2014-04-16-rebuilding-instagram-feed-table-view/images/feed3.png" width="240" height="451" />
+        <img src="http://engineering.2359media.net/media/2014-04-16-rebuilding-instagram-feed-table-view/images/feed2.png" width="266" height="500" />
     </td>
 </tr>
 </div>
