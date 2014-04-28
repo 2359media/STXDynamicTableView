@@ -12,3 +12,12 @@
 
 #import "STXFeedTableViewDelegate.h"
 #import "STXFeedTableViewDataSource.h"
+
+#import "UIViewController+Indicator.h"
+#import "UIViewController+Sharing.h"
+
+#import "STXFeedPhotoCell.h"
+#import "STXLikesCell.h"
+#import "STXCaptionCell.h"
+#import "STXCommentCell.h"
+#import "STXUserActionCell.h"

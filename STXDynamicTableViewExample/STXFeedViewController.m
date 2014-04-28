@@ -7,15 +7,6 @@
 
 #import "STXFeedViewController.h"
 
-#import "UIViewController+Indicator.h"
-#import "UIViewController+Sharing.h"
-
-#import "STXFeedPhotoCell.h"
-#import "STXLikesCell.h"
-#import "STXCaptionCell.h"
-#import "STXCommentCell.h"
-#import "STXUserActionCell.h"
-
 #import "STXPost.h"
 
 #define PHOTO_CELL_ROW 0
