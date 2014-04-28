@@ -19,7 +19,7 @@
 ---
 ##Usage
 
-Import the whole `STXDynamicTableVIew` source files into your project, and import the main header file:
+Import the whole `STXDynamicTableView` source files into your project, and import the main header file:
 
      #import "STXDynamicTableView.h"
 
