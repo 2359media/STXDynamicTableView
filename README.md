@@ -14,6 +14,13 @@
 </div>
 
 ---
+##Example Project
+
+Open `STXDynamicTableViewExample.xcworkspace` to build and run. Otherwise, use [cocoapods](http://cocoapods.org/) to update the existing 3rd party libraries (Pods) in the sample code, and then run 
+
+    pod install
+
+---
 ##Usage
 
 Import the whole `STXDynamicTableView` source files into your project, and import the main header file:
