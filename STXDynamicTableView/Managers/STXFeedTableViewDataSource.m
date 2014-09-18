@@ -176,7 +176,10 @@
     UITableViewCell *cell;
     
     NSInteger captionRowOffset = 3;
-    NSInteger commentsRowLimit = captionRowOffset + MAX_NUMBER_OF_COMMENTS;
+    
+    id<STXPostItem> postItem = self.posts[indexPath.section];
+    NSInteger commentsCount = MIN(MAX_NUMBER_OF_COMMENTS, [postItem totalComments]);
+    NSInteger commentsRowLimit = captionRowOffset + commentsCount;
     
     if (indexPath.row == PHOTO_CELL_ROW) {
         cell = [self photoCellForTableView:tableView atIndexPath:indexPath];
