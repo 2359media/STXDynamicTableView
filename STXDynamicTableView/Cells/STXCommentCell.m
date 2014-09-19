@@ -122,8 +122,10 @@ static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
 
 - (void)setCommentLabel:(STXAttributedLabel *)commentLabel text:(NSString *)text commenter:(NSString *)commenter
 {
+    NSString *commentText = [NSString stringWithFormat:@"%@ %@", commenter, text];
+    
     NSMutableArray *textCheckingResults = [NSMutableArray array];
-    [commentLabel setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+    [commentLabel setText:commentText afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         NSRange searchRange = NSMakeRange(0, [mutableAttributedString length]);
         
         NSRange currentRange = [[mutableAttributedString string] rangeOfString:commenter options:NSLiteralSearch range:searchRange];
