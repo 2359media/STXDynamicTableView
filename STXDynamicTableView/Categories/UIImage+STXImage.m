@@ -74,6 +74,7 @@
     CGRect cropSquare = CGRectMake(posX, posY, edge, edge);
     CGImageRef croppedCGImage = CGImageCreateWithImageInRect(self.CGImage, cropSquare);
     UIImage *croppedImage = [UIImage imageWithCGImage:croppedCGImage scale:self.scale orientation:self.imageOrientation];
+    CGImageRelease(croppedCGImage);
     return croppedImage;
 }
 

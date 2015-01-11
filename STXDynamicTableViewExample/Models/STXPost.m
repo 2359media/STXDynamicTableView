@@ -89,7 +89,7 @@
     if (self) {
         NSArray *errors;
         NSDictionary *mappingDictionary = @{ @"id": KZProperty(postID),
-                                             @"link": KZProperty(link),
+                                             @"link": KZBox(URL, link),
                                              @"caption": KZProperty(caption),
                                              @"user": KZProperty(userDictionary),
                                              @"user_has_liked": KZProperty(liked),
@@ -131,7 +131,9 @@
 
 - (NSString *)description
 {
-    NSDictionary *dictionary = @{ @"postID": self.postID, @"postDate": self.postDate, @"sharedURL": self.sharedURL };
+    NSDictionary *dictionary = @{ @"postID": self.postID ? : @"",
+                                  @"postDate": self.postDate ? : @"",
+                                  @"sharedURL": self.sharedURL ? : @"" };
     return [NSString stringWithFormat:@"<%@: %p> %@", NSStringFromClass([self class]), self, dictionary];
 }
 

@@ -35,4 +35,36 @@
     return self;
 }
 
+- (NSUInteger)hash
+{
+    return [_userID hash];
+}
+
+- (BOOL)isEqualToUser:(STXUser *)user
+{
+    return [user.userID isEqualToString:_userID];
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object) {
+        return YES;
+    }
+    
+    if (![object isKindOfClass:[STXUser class]]) {
+        return NO;
+    }
+    
+    return [self isEqualToUser:(STXUser *)object];
+}
+
+- (NSString *)description
+{
+    NSDictionary *dictionary = @{ @"userID": self.userID ? : @"",
+                                  @"username": self.username ? : @"",
+                                  @"fullname": self.fullname ? : @"",
+                                  @"profilePictureURL": self.profilePictureURL ? : @"" };
+    return [NSString stringWithFormat:@"<%@: %p> %@", NSStringFromClass([self class]), self, dictionary];
+}
+
 @end

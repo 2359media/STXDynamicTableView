@@ -11,7 +11,7 @@
 
 @interface STXComment ()
 
-@property (copy, nonatomic) NSNumber *commentID;
+@property (copy, nonatomic) NSString *commentID;
 @property (copy, nonatomic) NSString *text;
 @property (copy, nonatomic) NSDate *postDate;
 @property (copy, nonatomic) NSDictionary *fromDictionary;
@@ -78,7 +78,7 @@
 
 - (BOOL)isEqualToComment:(STXComment *)comment
 {
-    return [comment.commentID isEqualToNumber:_commentID];
+    return [comment.commentID isEqualToString:_commentID];
 }
 
 - (BOOL)isEqual:(id)object
@@ -96,7 +96,9 @@
 
 - (NSString *)description
 {
-    NSDictionary *dictionary = @{ @"commentID": (self.commentID != nil) ? self.commentID : self.commentID, @"from": self.from, @"text": self.text };
+    NSDictionary *dictionary = @{ @"commentID": self.commentID ? : @"",
+                                  @"from": self.from ? [self.from username] : @"",
+                                  @"text": self.text ? : @"" };
     return [NSString stringWithFormat:@"<%@: %p> %@", NSStringFromClass([self class]), self, dictionary];
 }
 
