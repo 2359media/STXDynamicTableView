@@ -8,7 +8,7 @@
 
 #import "UIViewController+Indicator.h"
 
-#import <UIView+AutoLayout/UIView+AutoLayout.h>
+#import <PureLayout/PureLayout.h>
 
 @implementation UIViewController (Indicator)
 

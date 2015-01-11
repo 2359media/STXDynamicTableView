@@ -55,14 +55,29 @@
 {
     [super viewDidAppear:animated];
     
+    // This will be notified when the Dynamic Type user setting changes (from the system Settings app)
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contentSizeCategoryChanged:) name:UIContentSizeCategoryDidChangeNotification object:nil];
+    
     if ([self.tableViewDataSource.posts count] == 0) {
         [self.activityIndicatorView startAnimating];
     }
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIContentSizeCategoryDidChangeNotification object:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)contentSizeCategoryChanged:(NSNotification *)notification
+{
+    [self.tableView reloadData];
 }
 
 #pragma mark - Feed

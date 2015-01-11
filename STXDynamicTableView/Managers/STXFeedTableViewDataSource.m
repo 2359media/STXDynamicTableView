@@ -92,11 +92,15 @@
         if (count > 2) {
             static NSString *CellIdentifier = @"STXLikesCountCell";
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-            cell = [[STXLikesCell alloc] initWithStyle:STXLikesCellStyleLikesCount likes:likes reuseIdentifier:CellIdentifier];
+            if (cell == nil) {
+                cell = [[STXLikesCell alloc] initWithStyle:STXLikesCellStyleLikesCount likes:likes reuseIdentifier:CellIdentifier];
+            }
         } else {
             static NSString *CellIdentifier = @"STXLikersCell";
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-            cell = [[STXLikesCell alloc] initWithStyle:STXLikesCellStyleLikers likes:likes reuseIdentifier:CellIdentifier];
+            if (cell == nil) {
+                cell = [[STXLikesCell alloc] initWithStyle:STXLikesCellStyleLikers likes:likes reuseIdentifier:CellIdentifier];
+            }
         }
 
         cell.delegate = self.controller;
@@ -193,6 +197,9 @@
     } else {
         cell = [self userActionCellForTableView:tableView atIndexPath:indexPath];
     }
+    
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
     
     return cell;
 }

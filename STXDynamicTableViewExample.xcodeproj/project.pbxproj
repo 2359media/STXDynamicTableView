@@ -122,7 +122,8 @@
 		01E383C218F65C6D0094BCC1 /* STXUserActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXUserActionCell.h; sourceTree = "<group>"; };
 		01E383C318F65C6D0094BCC1 /* STXUserActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXUserActionCell.m; sourceTree = "<group>"; };
 		01E383C418F65C6D0094BCC1 /* STXUserActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STXUserActionCell.xib; sourceTree = "<group>"; };
-		B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXDynamicTableViewExample.xcconfig"; path = "Pods/Pods-STXDynamicTableViewExample.xcconfig"; sourceTree = "<group>"; };
+		2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXDynamicTableViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-STXDynamicTableViewExample/Pods-STXDynamicTableViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXDynamicTableViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STXDynamicTableViewExample/Pods-STXDynamicTableViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STXDynamicTableViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -243,7 +244,7 @@
 				0196484318EAB434001185C3 /* STXDynamicTableViewExampleTests */,
 				0196482318EAB434001185C3 /* Frameworks */,
 				0196482218EAB434001185C3 /* Products */,
-				B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */,
+				7D3E8B648949E9F59F51A766 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,8 +276,8 @@
 				010BA84518ED43AC0030AF40 /* STXFeedViewController.h */,
 				010BA84618ED43AC0030AF40 /* STXFeedViewController.m */,
 				01E383B418F551480094BCC1 /* STXFeedViewController.xib */,
-				0196483318EAB434001185C3 /* STXAppDelegate.h */,
 				0196483418EAB434001185C3 /* STXAppDelegate.m */,
+				0196483318EAB434001185C3 /* STXAppDelegate.h */,
 				0196483618EAB434001185C3 /* Images.xcassets */,
 				0196485318EAB48F001185C3 /* Resources */,
 				0196482B18EAB434001185C3 /* Supporting Files */,
@@ -341,6 +342,15 @@
 				01E383BB18F596050094BCC1 /* STXUser.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7D3E8B648949E9F59F51A766 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */,
+				2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,7 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-STXDynamicTableViewExample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STXDynamicTableViewExample/Pods-STXDynamicTableViewExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -574,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,7 +617,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -616,14 +626,14 @@
 		};
 		0196484E18EAB434001185C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */;
+			baseConfigurationReference = 9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -631,14 +641,14 @@
 		};
 		0196484F18EAB434001185C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8DFB60A6FB2466F858E9ED9 /* Pods-STXDynamicTableViewExample.xcconfig */;
+			baseConfigurationReference = 2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

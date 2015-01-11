@@ -46,50 +46,20 @@ static CGFloat const UserActionCellHeight = 44;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height = 0;
-    NSInteger captionRowOffset = 3;
-    NSInteger commentsRowLimit = captionRowOffset + MAX_NUMBER_OF_COMMENTS;
-    
-    UITableViewCell *cell;
-    STXFeedTableViewDataSource *dataSource = tableView.dataSource;
-    
     if (indexPath.row == PHOTO_CELL_ROW) {
         return PhotoCellRowHeight;
-    } else if (indexPath.row == LIKES_CELL_ROW) {
-        cell = [dataSource likesCellForTableView:tableView atIndexPath:indexPath];
-    } else if (indexPath.row == CAPTION_CELL_ROW) {
-        cell = [dataSource captionCellForTableView:tableView atIndexPath:indexPath];
-    } else if (indexPath.row > CAPTION_CELL_ROW && indexPath.row < commentsRowLimit) {
-        NSIndexPath *commentIndexPath = [NSIndexPath indexPathForRow:indexPath.row-captionRowOffset inSection:indexPath.section];
-        cell = [dataSource commentCellForTableView:tableView atIndexPath:commentIndexPath];
-    } else {
-        return UserActionCellHeight;
     }
- 
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
     
-    height = [self heightForTableView:tableView cell:cell atIndexPath:indexPath];
-    return height;
+    return UITableViewAutomaticDimension;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self tableView:tableView heightForRowAtIndexPath:indexPath];
-}
-
-- (CGFloat)heightForTableView:(UITableView *)tableView cell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{
-    cell.bounds = CGRectMake(0, 0, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+    if (indexPath.row == PHOTO_CELL_ROW) {
+        return PhotoCellRowHeight;
+    }
     
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
-    
-    CGSize cellSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    
-    // Add extra padding
-    CGFloat height = cellSize.height + 1;
-    return height;
+    return UserActionCellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

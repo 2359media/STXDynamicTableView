@@ -16,7 +16,7 @@
 
     #import <UALogger/UALogger.h>
     #import <MTJSONUtils/NSObject+MTJSONUtils.h>
-    #import <UIView+AutoLayout/UIView+AutoLayout.h>
+    #import <PureLayout/PureLayout.h>
     #import <TTTAttributedLabel/TTTAttributedLabel.h>
     #import <MHPrettyDate/MHPrettyDate.h>
     #import <AFNetworking/AFNetworking.h>

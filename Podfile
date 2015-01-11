@@ -1,8 +1,9 @@
-platform :ios, "7.0"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
 
 target "STXDynamicTableViewExample" do
   pod 'TTTAttributedLabel'
-  pod 'UIView+AutoLayout'
+  pod 'PureLayout'
   pod 'MTJSONUtils'
   pod 'KZPropertyMapper'
   pod 'MHPrettyDate'

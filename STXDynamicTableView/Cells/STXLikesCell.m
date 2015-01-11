@@ -52,28 +52,13 @@ static CGFloat STXLikesViewTrailingEdgeInset = 10.f;
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    [self.contentView setNeedsLayout];
-    [self.contentView layoutIfNeeded];
-    
+   
     self.likesLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.frame) - (STXLikesViewLeadingEdgeInset + STXLikesViewTrailingEdgeInset);
-    
-    [super layoutSubviews];
 }
 
 - (void)updateConstraints
 {
     if (!self.didSetupConstraints) {
-        // Note: if the constraints you add below require a larger cell size
-        // than the current size (which is likely to be the default size {320,
-        // 44}), you'll get an exception.  As a fix, you can temporarily
-        // increase the size of the cell's contentView so that this does not
-        // occur using code similar to the line below.  See here for further
-        // discussion:
-        // https://github.com/Alex311/TableCellWithAutoLayout/commit/bde387b27e33605eeac3465475d2f2ff9775f163#commitcomment-4633188
-        
-        self.contentView.bounds = CGRectMake(0, 0, 99999, 99999);
-        
         [self.likesLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, STXLikesViewLeadingEdgeInset, 0, STXLikesViewTrailingEdgeInset)];
         
         self.didSetupConstraints = YES;
