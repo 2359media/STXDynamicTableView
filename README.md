@@ -75,7 +75,7 @@ We'd love to hear feedback. Create Github issues, pull requests, or hit us up on
 ##Credits
 This project uses the following 3rd party libraries: 
 
-* Tyler Fox for [UIView-AutoLayout](https://github.com/smileyborg/UIView-AutoLayout)
+* Tyler Fox for [PureLayout](https://github.com/smileyborg/PureLayout)
 * Mattt Thompson for [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [TTTAttributedLabel](https://github.com/mattt/TTTAttributedLabel)
 * Krzysztof Zabłocki for [KZPropertyMapper](https://github.com/krzysztofzablocki/KZPropertyMapper)
 * Mysterious Trousers for [MTJSONUtils](https://github.com/mysterioustrousers/MTJSONUtils)
