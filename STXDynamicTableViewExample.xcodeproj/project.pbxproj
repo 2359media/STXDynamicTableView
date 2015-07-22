@@ -656,6 +656,7 @@
 		};
 		0196485118EAB434001185C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STXDynamicTableViewExample.app/STXDynamicTableViewExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -678,6 +679,7 @@
 		};
 		0196485218EAB434001185C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STXDynamicTableViewExample.app/STXDynamicTableViewExample";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/2359media/STXDynamicTableView.svg?branch=master)](https://travis-ci.org/2359media/STXDynamicTableView)
+
 #STXDynamicTableView
 
 `STXDynamicTableView` is designed to solve the common use case to display a feed of photos with their corresponding likes, caption, and comments. It's inspired by Instagram feed table view.
@@ -16,9 +18,11 @@
 ---
 ##Example Project
 
-Open `STXDynamicTableViewExample.xcworkspace` to build and run. Otherwise, use [cocoapods](http://cocoapods.org/) to update the existing 3rd party libraries (Pods) in the sample code, and then run 
+We're using [cocoapods](http://cocoapods.org/) to update the existing 3rd party libraries (Pods) in the sample code:
 
     $ pod install
+
+Then, open `STXDynamicTableViewExample.xcworkspace` to build and run. 
 
 ---
 ##Usage

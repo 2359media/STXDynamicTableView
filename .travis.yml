@@ -1,0 +1,21 @@
+language: objective-c
+xcode_project: STXDynamicTableViewExample.xcodeproj
+cache:
+  directories:
+    - ./vendor/bundle
+    - ./Pods
+before_install:
+  - bundle install
+install:
+  - bundle exec pod install
+script:
+  - "./build.sh"
+osx_image: xcode6.4
+env:
+  global:
+  - REPO_SLUG="2359media/STXDynamicTableView"
+  - PRODUCT_NAME="STXDynamicTableViewExample"
+  - PROJECT_NAME="STXDynamicTableViewExample.xcworkspace"
+  - SCHEME_NAME="STXDynamicTableViewExample"
+  - CONFIGURATION_NAME="Debug"
+  - INFO_PLIST_PATH="STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist"

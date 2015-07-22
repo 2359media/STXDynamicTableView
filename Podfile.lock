@@ -37,12 +37,12 @@ DEPENDENCIES:
   - UALogger
 
 SPEC CHECKSUMS:
-  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
-  KZPropertyMapper: f06b00ff0c114bf8db45754a694b57278a628b5b
-  MHPrettyDate: d9f42f2ec3dfece6352f18ac77aa33312174e09e
-  MTJSONUtils: 2942d50ea1273b1e95e98a6a1df76997896c5a78
-  PureLayout: ddf4fedf7e2f5984f972bbd2205dda4fc3418347
-  TTTAttributedLabel: a847b59a75c92d59f4eabc9cc1745704cff2dc36
-  UALogger: 6e4cfa6dff135f8e1ae0c8f6c60a43328c26b402
+  AFNetworking: 96ac9bf3eda33582701cb1fcc5b896aa1e20311e
+  KZPropertyMapper: e80e83aa3bc6d37a6dd55e3d04a01afcb8c23d3c
+  MHPrettyDate: e0e5975041f0210c0542f4c5d7e3e44d1a8537be
+  MTJSONUtils: 8b4109baad11e510ade42d9adacaf2ae6ab86d24
+  PureLayout: 39ab7d09edec14750ba3982bf19126916861bba5
+  TTTAttributedLabel: 8aeaf67481bb38970711e2641211cba912bd5239
+  UALogger: ccc041e5982dbd274ab5805f914076fef9bf29cf
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.38.0

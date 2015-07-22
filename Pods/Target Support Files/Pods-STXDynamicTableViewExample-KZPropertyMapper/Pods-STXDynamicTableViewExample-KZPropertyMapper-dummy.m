@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_STXDynamicTableViewExample_KZPropertyMapper : NSObject
-@end
-@implementation PodsDummy_Pods_STXDynamicTableViewExample_KZPropertyMapper
-@end
