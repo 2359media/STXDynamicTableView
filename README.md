@@ -82,7 +82,6 @@ This project uses the following 3rd party libraries:
 * Tyler Fox for [PureLayout](https://github.com/smileyborg/PureLayout)
 * Mattt Thompson for [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [TTTAttributedLabel](https://github.com/mattt/TTTAttributedLabel)
 * Krzysztof Zabłocki for [KZPropertyMapper](https://github.com/krzysztofzablocki/KZPropertyMapper)
-* Mysterious Trousers for [MTJSONUtils](https://github.com/mysterioustrousers/MTJSONUtils)
 * Bobby Williams for [MHPrettyDate](https://github.com/bobjustbob/MHPrettyDate)
 * Urban Apps for [UALogger](https://github.com/UrbanApps/UALogger)
 
