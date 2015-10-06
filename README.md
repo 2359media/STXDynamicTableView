@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/2359media/STXDynamicTableView.svg?branch=master)](https://travis-ci.org/2359media/STXDynamicTableView)
 
-#STXDynamicTableView
+# STXDynamicTableView
 
 `STXDynamicTableView` is designed to solve the common use case to display a feed of photos with their corresponding likes, caption, and comments. It's inspired by Instagram feed table view.
 
@@ -16,7 +16,7 @@
 </div>
 
 ---
-##Example Project
+## Example Project
 
 We're using [cocoapods](http://cocoapods.org/) to update the existing 3rd party libraries (Pods) in the sample code:
 
@@ -25,7 +25,7 @@ We're using [cocoapods](http://cocoapods.org/) to update the existing 3rd party 
 Then, open `STXDynamicTableViewExample.xcworkspace` to build and run. 
 
 ---
-##Usage
+## Usage
 
 Import the whole `STXDynamicTableView` source files into your project, and import the main header file:
 
@@ -43,10 +43,10 @@ Supply your table view in the view controller, then set the delegate and data so
 
 Populate your data models to the table view data source:
 
-    NSDictionary *instagramPopularMediaDictionary = [jsonObject objectWithJSONSafeObjects];
+    NSDictionary *instagramPopularMediaDictionary = jsonObject;
     if (instagramPopularMediaDictionary) {
-        id data = [instagramPopularMediaDictionary valueForComplexKeyPath:@"data"];
-        NSArray *mediaDataArray = [data objectWithJSONSafeObjects];
+        id data = [instagramPopularMediaDictionary valueForKey:@"data"];
+        NSArray *mediaDataArray = data;
         
         NSMutableArray *posts = [NSMutableArray array];
         for (NSDictionary *mediaDictionary in mediaDataArray) {
@@ -62,13 +62,19 @@ Populate your data models to the table view data source:
 Your data models need to conform to `STXPostItem`, `STXCommentItem`, and `STXUserItem` to be able to use the built-in table view data source and delegate.
 
 ---
-##Background
+## Background
 
 Read [Rebuilding Instagram feed table
 view](http://engineering.2359media.net/blog/2014/04/16/rebuilding-instagram-feed-table-view/) to understand the challenges, difficulties, and how do we solve the issue of rebuilding the table view style popularized by Instagram app with Auto Layout.
 
 ---
-##Disclaimer
+## TODO
+
+* Migrate to Swift with better value types for data models and protocols
+* Using alternative architecture such as [AsyncDisplayKit](http://asyncdisplaykit.org/), [ComponentKit](http://componentkit.org/), or [React Native](http://www.reactnative.com/).
+
+---
+## Disclaimer
 `STXDynamicTableView` is simply a reusable code that you can use in your own project for any purpose as outlined in the LICENSE file. It's not a fully-fledged library, although we're taking steps to go there as time allows.
 
 ___
@@ -76,7 +82,7 @@ ___
 We'd love to hear feedback. Create Github issues, pull requests, or hit us up on [Twitter](http://twitter.com/2359eng).
 
 ---
-##Credits
+## Credits
 This project uses the following 3rd party libraries: 
 
 * Tyler Fox for [PureLayout](https://github.com/smileyborg/PureLayout)
@@ -86,7 +92,7 @@ This project uses the following 3rd party libraries:
 * Urban Apps for [UALogger](https://github.com/UrbanApps/UALogger)
 
 ___
-##License
+## License
 `STXDynamicTableView` is available under the MIT license. See the LICENSE file for more info.
 
 
