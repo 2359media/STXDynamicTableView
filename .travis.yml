@@ -5,7 +5,7 @@ cache:
     - ./vendor/bundle
     - ./Pods
 before_install:
-  - bundle install
+  - bundle update
 install:
   - bundle exec pod install
 script:
