@@ -17,6 +17,8 @@
 		010BA84418ED3ED30030AF40 /* STXFeedTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA84318ED3ED30030AF40 /* STXFeedTableViewDelegate.m */; };
 		010BA84718ED43AC0030AF40 /* STXFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA84618ED43AC0030AF40 /* STXFeedViewController.m */; };
 		010BA85A18ED5D680030AF40 /* UIViewController+Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA85918ED5D680030AF40 /* UIViewController+Indicator.m */; };
+		011A76A51BC41EC300B0A046 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A76A41BC41EC300B0A046 /* Feed.storyboard */; settings = {ASSET_TAGS = (); }; };
+		011A76A71BC4213700B0A046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A76A61BC4213700B0A046 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		017D674A18F6771800DD096A /* STXLikesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017D674818F6771800DD096A /* STXLikesCell.m */; };
 		017D674F18F6773100DD096A /* STXCaptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017D674D18F6773100DD096A /* STXCaptionCell.m */; };
 		0196482518EAB434001185C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196482418EAB434001185C3 /* Foundation.framework */; };
@@ -38,7 +40,6 @@
 		01E383AD18F53DDA0094BCC1 /* UIImageView+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383AC18F53DDA0094BCC1 /* UIImageView+Masking.m */; };
 		01E383B018F5491D0094BCC1 /* UIButton+STXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383AF18F5491D0094BCC1 /* UIButton+STXButton.m */; };
 		01E383B318F54B890094BCC1 /* UIImage+STXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383B218F54B890094BCC1 /* UIImage+STXImage.m */; };
-		01E383B518F551480094BCC1 /* STXFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E383B418F551480094BCC1 /* STXFeedViewController.xib */; };
 		01E383B918F55D390094BCC1 /* STXPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383B818F55D390094BCC1 /* STXPost.m */; };
 		01E383BC18F596050094BCC1 /* STXUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383BB18F596050094BCC1 /* STXUser.m */; };
 		01E383C018F638030094BCC1 /* STXCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383BE18F638030094BCC1 /* STXCommentCell.m */; };
@@ -79,6 +80,8 @@
 		010BA85718ED4F420030AF40 /* STXDynamicTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STXDynamicTableView.h; sourceTree = "<group>"; };
 		010BA85818ED5D680030AF40 /* UIViewController+Indicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Indicator.h"; sourceTree = "<group>"; };
 		010BA85918ED5D680030AF40 /* UIViewController+Indicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Indicator.m"; sourceTree = "<group>"; };
+		011A76A41BC41EC300B0A046 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Feed.storyboard; path = ../Feed.storyboard; sourceTree = "<group>"; };
+		011A76A61BC4213700B0A046 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = STXDynamicTableViewExample/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		017D674718F6771800DD096A /* STXLikesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXLikesCell.h; sourceTree = "<group>"; };
 		017D674818F6771800DD096A /* STXLikesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXLikesCell.m; sourceTree = "<group>"; };
 		017D674C18F6773100DD096A /* STXCaptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXCaptionCell.h; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 		01E383AF18F5491D0094BCC1 /* UIButton+STXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+STXButton.m"; sourceTree = "<group>"; };
 		01E383B118F54B890094BCC1 /* UIImage+STXImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+STXImage.h"; sourceTree = "<group>"; };
 		01E383B218F54B890094BCC1 /* UIImage+STXImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+STXImage.m"; sourceTree = "<group>"; };
-		01E383B418F551480094BCC1 /* STXFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STXFeedViewController.xib; sourceTree = "<group>"; };
 		01E383B718F55D390094BCC1 /* STXPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXPost.h; sourceTree = "<group>"; };
 		01E383B818F55D390094BCC1 /* STXPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXPost.m; sourceTree = "<group>"; };
 		01E383BA18F596050094BCC1 /* STXUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXUser.h; sourceTree = "<group>"; };
@@ -275,9 +277,8 @@
 				01E383B618F55D090094BCC1 /* Models */,
 				010BA84518ED43AC0030AF40 /* STXFeedViewController.h */,
 				010BA84618ED43AC0030AF40 /* STXFeedViewController.m */,
-				01E383B418F551480094BCC1 /* STXFeedViewController.xib */,
-				0196483418EAB434001185C3 /* STXAppDelegate.m */,
 				0196483318EAB434001185C3 /* STXAppDelegate.h */,
+				0196483418EAB434001185C3 /* STXAppDelegate.m */,
 				0196483618EAB434001185C3 /* Images.xcassets */,
 				0196485318EAB48F001185C3 /* Resources */,
 				0196482B18EAB434001185C3 /* Supporting Files */,
@@ -317,6 +318,8 @@
 		0196485318EAB48F001185C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				011A76A41BC41EC300B0A046 /* Feed.storyboard */,
+				011A76A61BC4213700B0A046 /* LaunchScreen.storyboard */,
 				0196485418EAB48F001185C3 /* instagram_media_popular.json */,
 			);
 			path = Resources;
@@ -400,7 +403,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = STX;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "2359 Media Pte Ltd";
 				TargetAttributes = {
 					0196483B18EAB434001185C3 = {
@@ -433,10 +436,11 @@
 			files = (
 				01E383C618F65C6D0094BCC1 /* STXUserActionCell.xib in Resources */,
 				0196482F18EAB434001185C3 /* InfoPlist.strings in Resources */,
+				011A76A51BC41EC300B0A046 /* Feed.storyboard in Resources */,
 				0196485518EAB48F001185C3 /* instagram_media_popular.json in Resources */,
 				0196483718EAB434001185C3 /* Images.xcassets in Resources */,
 				010BA83318EC11D40030AF40 /* STXFeedPhotoCell.xib in Resources */,
-				01E383B518F551480094BCC1 /* STXFeedViewController.xib in Resources */,
+				011A76A71BC4213700B0A046 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +574,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -634,6 +639,7 @@
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.2359media.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -649,6 +655,7 @@
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExample/STXDynamicTableViewExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.2359media.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -671,6 +678,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "STXDynamicTableViewExampleTests/STXDynamicTableViewExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.2359media.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -690,6 +698,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STXDynamicTableViewExample/STXDynamicTableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "STXDynamicTableViewExampleTests/STXDynamicTableViewExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.2359media.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
