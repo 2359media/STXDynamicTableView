@@ -88,7 +88,7 @@
     
     if (cell == nil) {
         NSDictionary *likes = [post likes];
-        NSInteger count = [[likes valueForComplexKeyPath:@"count"] integerValue];
+        NSInteger count = [[likes valueForKey:@"count"] integerValue];
         if (count > 2) {
             static NSString *CellIdentifier = @"STXLikesCountCell";
             cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];

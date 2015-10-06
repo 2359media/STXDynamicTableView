@@ -27,7 +27,7 @@ static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
 {
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSString *text = [caption stringValueForComplexKeyPath:@"text"];
+        NSString *text = [caption valueForKey:@"text"];
         _captionLabel = [self captionLabelWithText:text];
         
         [self.contentView addSubview:_captionLabel];
@@ -67,7 +67,7 @@ static NSString *HashTagAndMentionRegex = @"(#|@)(\\w+)";
     if (_caption != caption) {
         _caption = caption;
         
-        NSString *text = [caption stringValueForComplexKeyPath:@"text"];
+        NSString *text = [caption valueForKey:@"text"];
         [self setCaptionLabel:self.captionLabel text:text];
     }
 }

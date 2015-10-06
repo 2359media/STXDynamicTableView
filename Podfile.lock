@@ -22,7 +22,6 @@ PODS:
     - AFNetworking/NSURLSession
   - KZPropertyMapper (2.5.1)
   - MHPrettyDate (1.1.1)
-  - MTJSONUtils (0.1.1)
   - PureLayout (2.0.4)
   - TTTAttributedLabel (1.13.0)
   - UALogger (0.3)
@@ -31,7 +30,6 @@ DEPENDENCIES:
   - AFNetworking
   - KZPropertyMapper
   - MHPrettyDate
-  - MTJSONUtils
   - PureLayout
   - TTTAttributedLabel
   - UALogger
@@ -40,9 +38,8 @@ SPEC CHECKSUMS:
   AFNetworking: 96ac9bf3eda33582701cb1fcc5b896aa1e20311e
   KZPropertyMapper: e80e83aa3bc6d37a6dd55e3d04a01afcb8c23d3c
   MHPrettyDate: e0e5975041f0210c0542f4c5d7e3e44d1a8537be
-  MTJSONUtils: 8b4109baad11e510ade42d9adacaf2ae6ab86d24
   PureLayout: 39ab7d09edec14750ba3982bf19126916861bba5
   TTTAttributedLabel: 8aeaf67481bb38970711e2641211cba912bd5239
   UALogger: ccc041e5982dbd274ab5805f914076fef9bf29cf
 
-COCOAPODS: 0.38.0
+COCOAPODS: 0.38.2

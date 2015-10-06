@@ -141,13 +141,13 @@
 
 - (NSDate *)postDate
 {
-    NSTimeInterval createdTime = [[self.caption stringValueForComplexKeyPath:@"created_time"] doubleValue];
+    NSTimeInterval createdTime = [[self.caption valueForKey:@"created_time"] doubleValue];
     return [NSDate dateWithTimeIntervalSince1970:createdTime];
 }
 
 - (NSString *)captionText
 {
-    return [self.caption stringValueForComplexKeyPath:@"text"];
+    return [self.caption valueForKey:@"text"];
 }
 
 - (NSURL *)sharedURL
@@ -166,7 +166,7 @@
     
         NSMutableArray *mutableComments = [NSMutableArray array];
         
-        NSArray *commentsArray = [[self.commentsDictionary valueForComplexKeyPath:@"data"] objectWithJSONSafeObjects];
+        NSArray *commentsArray = [self.commentsDictionary valueForKey:@"data"];
         for (NSDictionary *commentDictionary in commentsArray) {
             STXComment *comment = [[STXComment alloc] initWithDictionary:commentDictionary];
             [mutableComments addObject:comment];
@@ -180,13 +180,13 @@
 
 - (NSInteger)totalLikes
 {
-    NSNumber *count = [self.likes valueForComplexKeyPath:@"count"];
+    NSNumber *count = [self.likes valueForKey:@"count"];
     return [count integerValue];
 }
 
 - (NSInteger)totalComments
 {
-    NSNumber *count = [self.commentsDictionary valueForComplexKeyPath:@"count"];
+    NSNumber *count = [self.commentsDictionary valueForKey:@"count"];
     return [count integerValue];
 }
 

@@ -4,7 +4,6 @@ platform :ios, "8.0"
 target "STXDynamicTableViewExample" do
   pod 'TTTAttributedLabel'
   pod 'PureLayout'
-  pod 'MTJSONUtils'
   pod 'KZPropertyMapper'
   pod 'MHPrettyDate'
   pod 'AFNetworking'

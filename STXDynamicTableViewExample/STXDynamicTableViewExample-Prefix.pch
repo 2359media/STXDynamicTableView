@@ -15,7 +15,6 @@
     @import Foundation;
 
     #import <UALogger/UALogger.h>
-    #import <MTJSONUtils/NSObject+MTJSONUtils.h>
     #import <PureLayout/PureLayout.h>
     #import <TTTAttributedLabel/TTTAttributedLabel.h>
     #import <MHPrettyDate/MHPrettyDate.h>

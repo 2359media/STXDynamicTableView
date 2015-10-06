@@ -94,10 +94,9 @@
             UALog(@"%@", error);
         }
         
-        NSDictionary *instagramPopularMediaDictionary = [jsonObject objectWithJSONSafeObjects];
+        NSDictionary *instagramPopularMediaDictionary = jsonObject;
         if (instagramPopularMediaDictionary) {
-            id data = [instagramPopularMediaDictionary valueForComplexKeyPath:@"data"];
-            NSArray *mediaDataArray = [data objectWithJSONSafeObjects];
+            NSArray *mediaDataArray = [instagramPopularMediaDictionary valueForKey:@"data"];
             
             NSMutableArray *posts = [NSMutableArray array];
             for (NSDictionary *mediaDictionary in mediaDataArray) {

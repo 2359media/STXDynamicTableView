@@ -29,10 +29,10 @@ static CGFloat STXLikesViewTrailingEdgeInset = 10.f;
         _cellStyle = style;
         
         if (style == STXLikesCellStyleLikesCount) {
-            NSInteger count = [[likes valueForComplexKeyPath:@"count"] integerValue];
+            NSInteger count = [[likes valueForKey:@"count"] integerValue];
             _likesLabel = [self likesLabelForCount:count];
         } else {
-            NSArray *likers = [[likes valueForComplexKeyPath:@"data"] objectWithJSONSafeObjects];
+            NSArray *likers = [likes valueForKey:@"data"];
             _likesLabel = [self likersLabelForLikers:likers];
         }
         
@@ -72,11 +72,11 @@ static CGFloat STXLikesViewTrailingEdgeInset = 10.f;
     if (_likes != likes) {
         _likes = likes;
         
-        NSInteger count = [[likes valueForComplexKeyPath:@"count"] integerValue];
+        NSInteger count = [[likes valueForKey:@"count"] integerValue];
         if (count > 2) {
             [self setLikesLabel:self.likesLabel count:count];
         } else {
-            NSArray *likers = [[likes valueForComplexKeyPath:@"data"] objectWithJSONSafeObjects];
+            NSArray *likers = [likes valueForKey:@"data"];
             [self setLikersLabel:self.likesLabel likers:likers];
         }
     }
